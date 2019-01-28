@@ -1,2 +1,3 @@
 # neovim_config
-My configuration for neovim
+This repository contains my configuration for neovim.
+![](neovim.jpg)
