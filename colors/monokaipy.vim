@@ -83,7 +83,7 @@ call s:HL('EasyMotionShade', grey, defaultBackground, 'bold')
 call s:HL('Directory', lightGreen, {}, 'bold')
 call s:HL('Error', {}, red, 'NONE')
 call s:HL('ErrorMsg', pink, defaultBackground, 'bold')
-call s:HL('Exception', seaGreen, {}, 'bold')
+call s:HL('Exception', pink, {}, 'bold')
 call s:HL('Ignore', lightGrey, defaultBackground, 'NONE')
 
 call s:HL('Keyword', pink, {}, 'bold')

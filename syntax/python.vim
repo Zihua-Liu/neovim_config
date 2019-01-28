@@ -67,15 +67,16 @@ endif
 "   built-in below (use 'from __future__ import print_function' in 2.6)
 "
 syn keyword pythonConstant	False None True
-syn keyword pythonStatement	as assert break continue del exec global
-syn keyword pythonStatement	lambda nonlocal pass print return with yield
+syn keyword pythonStatementt	as assert break continue del exec global
+syn keyword pythonStatementt	lambda nonlocal pass print return with yield
 syn keyword pythonStatement	def nextgroup=pythonFunction skipwhite
-syn keyword pythonStatement class nextgroup=pythonClass skipwhite
+syn keyword pythonStatement class nextgroup=pythonFunction skipwhite
 syn keyword pythonConditional	elif else if
 syn keyword pythonRepeat	for while
 syn keyword pythonOperator	and in is not or
 syn keyword pythonException	except finally raise try
 syn keyword pythonInclude	from import
+syn keyword selfIdentifier self
 
 " NOTE: @pfdevilliers added this
 " I copied this directly from the ruby.vim syntax file inorder to highlight all
@@ -294,6 +295,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   "
   " HiLink pythonStatement	Statement
   HiLink pythonConstant  Constant
+  HiLink pythonStatementt  Statement
   HiLink pythonStatement  Structure
   HiLink pythonConditional	Conditional
   HiLink pythonRepeat		Repeat
@@ -312,6 +314,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonExtraPseudoOperator Operator
   HiLink pythonClass Normal
   HiLink pythonParameters Identifier
+  HiLink selfIdentifier Identifier
   HiLink pythonParam Normal
   HiLink pythonBrackets Normal
   HiLink pythonClassParameters InheritUnderlined
