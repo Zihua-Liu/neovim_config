@@ -77,8 +77,9 @@ syn keyword pythonOperator	and in is not or
 syn keyword pythonException	except finally raise try
 syn keyword pythonInclude	from import
 syn keyword selfIdentifier self
+syn match   pythonSelffunction  "\v[[:alpha:]_0123456789]+\ze(\s?\()" 
 
-" NOTE: @pfdevilliers added this
+"NOTE: @pfdevilliers added this
 " I copied this directly from the ruby.vim syntax file inorder to highlight all
 " the operators. This must offcourse be revised to only contain the operators
 " that exists in python.
@@ -318,6 +319,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonParam Normal
   HiLink pythonBrackets Normal
   HiLink pythonClassParameters InheritUnderlined
+  HiLink pythonSelffunction Selffunction
 
   if !exists("python_no_number_highlight")
     HiLink pythonNumber		Number

@@ -156,6 +156,7 @@ call s:HL('pythonBuiltInFunc', lightBlue, {}, 'NONE')
 call s:HL('pythonBuiltin', lightBlue, {}, 'NONE')
 call s:HL('pythonKwargs', orange, {}, 'NONE')
 call s:HL('pythonPreCondit', pink, {}, 'bold')
+call s:HL('Selffunction', lightBlue, {}, 'NONE')
 
 " Javascript
 call s:HL('javascriptFuncArg', orange, {}, 'NONE')
